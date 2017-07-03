@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang='en' style='height: auto;'>
+	<head>
+		<title>The Boston Globe - graphic</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no'>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+		<meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
+		<meta http-equiv='Pragma' content='no-cache' />
+		<meta http-equiv='Expires' content='0' />
+
+		<script>
+			function loadCSS(e,n,o,t){"use strict";var i=window.document.createElement("link"),f=n||window.document.getElementsByTagName("script")[0],a=window.document.styleSheets;return i.rel="stylesheet",i.href=e,i.media="only x",t&&(i.onload=t),f.parentNode.insertBefore(i,f),i.onloadcssdefined=function(e){for(var n,o=0;o<a.length;o++)a[o].href&&a[o].href===i.href&&(n=!0);n?e():setTimeout(function(){i.onloadcssdefined(e)})},i.onloadcssdefined(function(){i.media=o||"all"}),i}!function(e){var n="https://apps.bostonglobe.com/common/font/",o=e.document;if("querySelector"in o){var t=function(e){if(!("FontFace"in e))return!1;var n=new e.FontFace("t",'url( "data:application/font-woff2," ) format( "woff2" )');return n.load()["catch"](function(){}),"loading"===n.status}(e),i=navigator.userAgent,f=n+"woff.css";t?f=n+"woff2.css":i.indexOf("Android")>-1&&i.indexOf("like Gecko")>-1&&-1===i.indexOf("Chrome")&&(f=n+"ttf.css"),loadCSS(f)}}(this);
+		</script>
+
+		<noscript><link href='https://apps.bostonglobe.com/common/font/nojs-fonts.css' rel='stylesheet'></noscript>
+
+		<!-- see http://bostonglobe.github.io/news-apps-style-guide for how to use base.css -->
+		<link rel='stylesheet' href='https://apps.bostonglobe.com/common/css/base/base-1.2.0.css'>
+
+		<!-- smoosh -->
+		<link rel='stylesheet' href='css/main.css'>
+		<!-- endsmoosh -->
+
+		<link rel='shortcut icon' href='https://www.bostonglobe.com/rw/SysConfig/WebPortal/BostonGlobe/Framework/images/favicon.ico' />
+	</head>
+	<body style='height: auto;'>
+
+		<!-- *** DO NOT DELETE *** -->
+		<div id='globe-graphic-container' style='height: 100%; overflow: hidden;'>
+			<div class='wrapper'>
+				<div class='chart'>
+					<p class='chart__copy'>Binge and heavy drinking in the United States climbed <mark class='mark--binge'>8.9 percent</mark> and <mark class='mark--heavy'>17.2 percent</mark>, respectively, from 2005 to 2012. Drinking in Massachussets, however, showed sharper changes, with a <mark class='mark--binge'>12.66 percent</mark> increase in binge drinking and a <mark class='mark--heavy'>21.3 percent</mark> increase in heavy drinking.</p>
+
+					<ul class='chart__list'>
+						<li class='chart__item'>
+							{{> us-full }}
+						</li>
+						<li class='chart__item'>
+							{{> ma-full }}
+						</li>
+					</ul>
+				</div>
+
+				<div class='chart'>
+					<p class='chart__copy'>Although women in Massachusetts make up a smaller proportion of binge and heavy drinkers than men, the female population saw larger increases from 2005 to 2012. Female binge drinkers rose <mark class='mark--binge'>25.8 percent</mark> and heavy drinkers <mark class='mark--heavy'>31.8 percent</mark>, while males rose <mark class='mark--binge'>6 percent</mark> and <mark class='mark--heavy'>13.9 percent</mark>, respectively.</p>
+					<ul class='chart__list'>
+						<li class='chart__item'>
+							{{> ma-f }}
+						</li>
+						<li class='chart__item'>
+							{{> ma-m }}
+						</li>
+					</ul>
+				</div>
+
+			<dl class='legend'>
+				<dt class='legend__term mark--binge'>Binge drinking</dt>
+				<dd class='legend__def'>The consumption of more than four drinks for women or five drinks for men on a single occasion at least once in the past 30 days</dd>
+
+				<dt class='legend__term mark--heavy'>Heavy drinking</dt>
+				<dd class='legend__def'>The consumption, on average, of more than one drink per day for women or two drinks per day for men in the past 30 days</dd>
+			</dl>
+
+			<div class='source-and-credit'>
+				<p class='source'><span>SOURCE: Institute for Health Metrics and Evaluation</span></p>
+				<p class='credit'><span>Elaina Natario / Globe Staff</span></p>
+			</div>
+		</div>
+
+			<!--
+			==========================
+			(end) graphic HTML here
+			==========================
+			-->
+
+		</div>
+
+		<!-- *** DO NOT GO BELOW HERE *** -->
+		<!-- smoosh -->
+		<script src='js/bundle.js' type='text/javascript'></script>
+		<!-- endsmoosh -->
+	</body>
+</html>

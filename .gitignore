@@ -1,0 +1,10 @@
+dist
+.tmp
+node_modules
+ssh-config.js
+2017-06-27_alcohol_cache
+2017-06-27_alcohol_files
+2017-06-27_alcohol.html
+.Rhistory
+
+*.swp
